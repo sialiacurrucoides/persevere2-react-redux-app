@@ -1,0 +1,27 @@
+.completed {
+	position: relative;
+	color: var(--success-color);
+	margin-top: 0.5rem;
+}
+
+.freezed {
+	position: relative;
+	color: var(--streak-color);
+}
+
+.unit {
+	flex: 1 0 11%;
+	background: #ddd;
+	margin: 1%;
+	margin-bottom: 3%;
+	text-align: center;
+	border-radius: 4px;
+	color: var(--color-dark);
+	min-height: 7rem;
+}
+
+
+.middleValue {
+	font-size: 1.4rem;
+}
+

@@ -1,0 +1,129 @@
+.HomeContainer {
+    max-width: 1430px;
+    margin: auto;
+    padding: 0 10.3%;
+}
+
+.Hero {position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: calc(100vh - 8rem);
+}
+
+.CallForAction, .Illustration {
+    min-height: calc(100vh - 8rem - 2*3rem);
+}
+
+.CallForAction {
+    padding-right: 10.3%;
+}
+
+.MainLine {
+    padding-top: 11.72vh;
+    line-height: 1.65;
+    padding-bottom: 3.125vh;
+    font-size: 6.25vh;
+    font-weight: 700;
+}
+
+.Quote {
+    font-size: 3.51562vh;
+    line-height: 1.7;
+    color: var(--light-grey);
+    font-weight: 300;
+}
+
+.Author {
+    font-size: 2.73437vh;
+    color: var(--light-grey);
+    margin-bottom: 2.5rem;
+    float: right;
+    font-weight: 300;
+    display: block;
+    width: 100%;
+    text-align: right;
+    padding-top: 1rem;
+}
+
+.ActionButton{
+    display: block;
+}
+
+.Illustration {
+    background:linear-gradient(343.31deg, #8566AA 12.04%, rgba(135, 124, 176, 0.767824) 44.93%, rgba(255, 255, 255, 0) 83.74%);
+}
+
+.Building {
+    display: block;
+    margin: auto;
+    width: 12rem;
+    margin-top: 14vh;
+    transform: translateX(16%);
+}
+
+.Calendar {
+    width: 62.5%;
+    transform: translateX(8%);
+}
+
+@media only screen and (max-width: 768px) {
+    .Hero {position: relative;
+        max-height: 80vh;
+        grid-template-columns: 100%;
+    }
+    .CallForAction, .Illustration {
+        max-height: 40vh;
+        min-height: 0;
+        text-align: center;
+    }
+    
+    .CallForAction {
+        padding-right: 0;
+    }
+    
+    .MainLine {
+        padding-top: 4.72vh;
+        line-height: 1.5;
+        padding-bottom: 2.125vh;
+        font-size: 4.25vh;
+        font-weight: 700;
+    }
+    
+    .Quote {
+        font-size: 2vh;
+        line-height: 1.7;
+        color: var(--light-grey);
+        font-weight: 300;
+    }
+    
+    .Author {
+        font-size: 1.5vh;
+        color: var(--light-grey);
+        margin-bottom: 1rem;
+        float: none;
+        font-weight: 300;
+    }
+    
+    .ActionButton{
+        display: inline-block;
+        margin-top: 3vh;
+    }
+
+    .Illustration{
+        position: relative;
+    }
+
+    .Building {
+        width: 35.73%;
+        margin-top: 1rem;
+        right: 15%;
+        transform: translateX(65%) translateY(1rem);
+    }
+
+    .Calendar {
+        width: 45%;
+        transform: translateY(-6rem) translateX(-50%);
+        display: inline-block;
+    }
+    
+  }

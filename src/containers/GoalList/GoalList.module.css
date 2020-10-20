@@ -1,0 +1,46 @@
+.CreateNew {
+	margin: auto;
+	text-align: center;
+	margin-bottom: 1.5rem;
+	width: var(--inner-width);
+	position: relative;
+}
+
+.CreateNew input {
+	transform: scale(1.2);
+	width: 80%;
+}
+
+.AddLink {
+	position: absolute;
+	top: -0.4rem;
+	right: -0.6rem;
+}
+
+.AddLink button {
+	background: var(--color-dark);
+	opacity: 0.8;
+}
+
+.AddLink button:hover {
+	background: var(--color-dark);
+	opacity: 1;
+}
+
+
+.AddBtn {
+	position: absolute;
+    right: 0;
+    transform: translateY(-4px) scale(0.8);
+    background: var(--color-dark);
+    color: #fff;
+}
+
+.PopOver {
+	padding: 1rem;
+	color: var(--color-dark);
+}
+
+.AddIcon{
+	color: #fff;
+}

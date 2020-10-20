@@ -1,0 +1,7 @@
+.Title {
+    color: var(--color-dark);
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+    text-shadow: 1px 1px 2px #999;
+}

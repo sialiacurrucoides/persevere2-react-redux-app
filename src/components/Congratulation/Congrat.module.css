@@ -1,0 +1,18 @@
+.smile {
+	font-size: 2.8rem;
+}
+
+.congrat {
+	width: 200px;
+	height: 200px;
+	padding: 1rem;
+	font-size: 2rem;
+	text-align: center;
+	background: var(--color-lighter);
+	color: var(--color-light);
+	border-radius: 50%;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}

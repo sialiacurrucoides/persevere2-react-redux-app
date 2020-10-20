@@ -1,0 +1,32 @@
+.dateField {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: center;
+}
+
+.calendar {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 1.5rem;
+	position: relative;
+	width: 75%;
+	margin: auto;
+}
+
+.navigationArrow {
+	cursor: pointer;
+	align-self: center;
+}
+
+.navigateCalendar {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.navigateCalendar > * {
+	color: var(--color-dark);
+}

@@ -1,38 +1,115 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,300&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*:focus {
+    outline: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+:root {
+	--color-dark: #8566aa;
+	--color-light: #f4f4f4;
+	--color-darker: #6983aa;
+	--color-lighter: #8ec6c5;
+	--link-color: #5eac9f;
+	--success-color: #81b68a;
+	--streak-color: #ecad66;
+	--alert-color: #f09367;
+  --inner-width: 70%;
+  --light-grey: #777;
+  --light-purple: #8566aa41;
+}
+
+.toTheMiddle {
+	margin: auto;
+	font-size: 0.8rem;
+}
+
+.hidden {
+	display: none;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+a:-webkit-any-link {
+	text-decoration: none;
+	color: var(--link-color);
+}
+
+a:hover {
+	color: var(--color-darker);
+}
+
+.popOver {
+	padding: 1rem;
+	color: var(--color-dark);
+}
+
+#createNew {
+  margin: auto;
+	text-align: center;
+	margin-bottom: 1.5rem;
+	width: var(--inner-width);
+  position: relative;
+}
+
+#createNew input {
+	transform: scale(1.2);
+  width: 80%;
+  padding: 0.5rem;
+  border: 1px solid transparent;
+  border-bottom: 1px solid var(--light-grey);
+  color: var(--color-dark);
+}
+
+.title {
+	color: var(--color-dark);
+	font-size: 1.5rem;
+	text-align: center;
+	padding: 1rem;
+	text-shadow: 1px 1px 2px #999;
+}
+
+
+.Toastify__toast--info {
+	background: #77abce;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .Toastify__toast--success {
+	background: #8bc58d;
+	color: #fff;
+	border: 1px solid #fff;
   }
-  to {
-    transform: rotate(360deg);
+  .Toastify__toast--warning {
+	background: #ebc322;
   }
+  .Toastify__toast--error {
+	background: #d68a82;
+  }
+
+  .error-msg {
+	  border: 1px solid transparent;
+	  border-radius: 8px;
+	  padding: 0.5rem 1rem;
+	  color: rgba(100,0,10,1);
+	  background-color: rgba(220,0,10,0.2);
+  }
+
+  /* general from Unit*/
+.currentDay {
+	cursor: url("./assets/check2.png"), auto;
+}
+
+.middleValue {
+	font-size: 1.4rem;
+}
+
+.undoTheDay {
+	cursor: url("./assets/undo2.png"), auto;
 }

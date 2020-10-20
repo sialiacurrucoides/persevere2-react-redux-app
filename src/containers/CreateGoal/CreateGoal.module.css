@@ -1,0 +1,13 @@
+.CreateGoal {
+	width: 80%;
+}
+
+
+.Reason {
+	font-family: inherit;
+	width: 100%;
+	border: 1px solid #999;
+	border-radius: 4px;
+	padding: 0.5rem;
+	color: #333;
+}

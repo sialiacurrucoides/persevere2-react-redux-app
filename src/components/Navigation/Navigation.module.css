@@ -1,0 +1,14 @@
+.Navigation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 3rem;
+    background: transparent;
+}
+
+.Logo {
+    height: 6rem !important;
+}
+

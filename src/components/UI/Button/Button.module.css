@@ -1,0 +1,40 @@
+.Button {
+    border: 1px solid #fff;
+    border-radius: 8px;
+    background-color: var(--color-dark);
+    color: #fff;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+}
+
+.Button a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    text-transform: capitalize;
+}
+
+.Button:hover {
+    background-color: #8566aa88;
+    color: #fff;
+}
+
+.Button:disabled{
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.Primary {
+    color: #fff;
+    background: var(--color-dark);
+}
+
+.Secondary {
+    color: #555;
+    background: #ECEEF0;
+}

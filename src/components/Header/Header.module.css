@@ -1,0 +1,31 @@
+.Header {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: center;
+	position: relative;
+	width: 100%;
+	position: relative;
+	top: -1.5rem;
+}
+
+.Home,
+.Out {
+	top: 0;
+	padding: 1rem;
+	align-self: flex-start;
+	background-color: #8566aa99;
+	border-bottom-left-radius: 25%;
+	border-bottom-right-radius: 25%;
+	box-shadow: 1px 1px 2px #555 inset;
+}
+
+.Home a,
+.Out a {
+	color: var(--color-dark);
+}
+
+.Invisible {
+	visibility: hidden;
+}

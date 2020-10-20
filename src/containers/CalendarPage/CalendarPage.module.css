@@ -1,0 +1,20 @@
+.streak {
+	color: var(--color-lighter);
+	text-shadow: 1px 1px 2px #555;
+	font-size: 2.5rem;
+	font-weight: 700;
+	padding-right: 0.3rem;
+	line-height: 0;
+}
+
+.streakLine {
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+	color: var(--color-dark);
+}
+
+.streakLine span {
+	align-self: center;
+	line-height: 0.8;
+}
