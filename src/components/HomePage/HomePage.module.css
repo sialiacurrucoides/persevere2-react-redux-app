@@ -66,7 +66,7 @@
     transform: translateX(8%);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1025px) {
     .Hero {position: relative;
         max-height: 80vh;
         grid-template-columns: 100%;
@@ -122,7 +122,7 @@
 
     .Calendar {
         width: 45%;
-        transform: translateY(-6rem) translateX(-50%);
+        transform: translateY(-15%) translateX(-50%);
         display: inline-block;
     }
     
