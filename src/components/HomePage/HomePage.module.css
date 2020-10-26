@@ -66,6 +66,7 @@
     transform: translateX(8%);
 }
 
+
 @media only screen and (max-width: 1025px) {
     .Hero {position: relative;
         max-height: 80vh;
@@ -106,7 +107,6 @@
     
     .ActionButton{
         display: inline-block;
-        margin-top: 3vh;
     }
 
     .Illustration{
@@ -125,5 +125,6 @@
         transform: translateY(-15%) translateX(-50%);
         display: inline-block;
     }
-    
+
   }
+

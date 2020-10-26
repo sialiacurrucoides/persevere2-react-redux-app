@@ -5,3 +5,9 @@
     padding: 1rem;
     text-shadow: 1px 1px 2px #999;
 }
+
+@media screen and (max-width: 350px){
+    .Title {
+        font-size: 1rem;
+    }
+}
