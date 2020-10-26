@@ -75,6 +75,8 @@ a:hover {
 	text-align: center;
 	padding: 1rem;
 	text-shadow: 1px 1px 2px #999;
+	max-width: 60%;
+	margin: auto;
 }
 
 
