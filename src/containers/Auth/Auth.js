@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import {Redirect} from 'react-router-dom';
+import Checkbox from '@material-ui/core/Checkbox';
 
 import Input from '../../components/UI/Input/Input';
 import Spinner from '../../components/UI/Spinner/Spinner';
@@ -43,7 +44,8 @@ class Auth extends Component {
                 touched: false
             }
         },
-        isSignup: true
+        isSignup: true,
+        agreed: false
     }
 
     errorMsgs = {
@@ -75,12 +77,17 @@ class Auth extends Component {
     submitHandler = (event) => {
         event.preventDefault();
         this.props.onAuth(this.state.controls.email.value, this.state.controls.password.value, this.state.isSignup);
+        
     }
 
     switchAuthModeHandler = () => {
         this.setState(prevState => {
             return {isSignup: !prevState.isSignup};
         });
+    }
+
+    handleAgreement = () => {
+        this.setState({agreed: !this.state.agreed});
     }
 
     render () {
@@ -91,6 +98,16 @@ class Auth extends Component {
                 config: this.state.controls[key]
             })
         }
+        let acceptTermsAndCond = (
+            <div className={classes.Agreement}>
+                <Checkbox color="default" onChange={this.handleAgreement} required={true} />
+                I agree with the &nbsp;
+                <a href="https://www.termsofusegenerator.net/live.php?token=ImkngXvBhpoO9IF3j6LVLINrvPZWqWIX" 
+                target="_blank" rel="noopener noreferrer"> Terms of Use </a>&#160; and &nbsp;
+                <a href="https://www.privacypolicyonline.com/live.php?token=NvNwrP4tTIFoNUzGNw1LWywbdfdsuXYg" 
+                target="_blank" rel="noopener noreferrer"> Privacy Policy </a>
+            </div>
+        );
         let form = formElementsArray.map(formElement => (
             <Input 
             key={formElement.id}
@@ -120,6 +137,7 @@ class Auth extends Component {
                     <h2 className={classes.Title}>{!this.state.isSignup ? 'SIGN IN' : 'REGISTRATION'}</h2>
                     <form onSubmit={this.submitHandler}>
                         {form}
+                        {this.state.isSignup && acceptTermsAndCond }
                         <Button btnType="Primary" width="100%">SUBMIT</Button>
                     </form>
                     <Button 

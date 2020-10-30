@@ -4,3 +4,11 @@
     font-weight: 300;
     padding: 1rem;
 }
+
+.Agreement {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 0.6rem;
+    align-items: center;
+    color: var(--light-grey);
+}
