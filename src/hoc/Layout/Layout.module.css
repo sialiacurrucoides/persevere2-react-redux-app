@@ -11,6 +11,7 @@
 
 .SmallWrapper {
 	width: 50%;
+	max-width: 35rem;
 	background-color: var(--color-light);
 	opacity: 0.95;
 	display: flex;
