@@ -101,11 +101,12 @@ class Auth extends Component {
         let acceptTermsAndCond = (
             <div className={classes.Agreement}>
                 <Checkbox color="default" onChange={this.handleAgreement} required={true} />
-                I agree with the &nbsp;
+                <span>I agree with the &nbsp;
                 <a href="https://www.termsofusegenerator.net/live.php?token=ImkngXvBhpoO9IF3j6LVLINrvPZWqWIX" 
                 target="_blank" rel="noopener noreferrer"> Terms of Use </a>&#160; and &nbsp;
                 <a href="https://www.privacypolicyonline.com/live.php?token=NvNwrP4tTIFoNUzGNw1LWywbdfdsuXYg" 
                 target="_blank" rel="noopener noreferrer"> Privacy Policy </a>
+                </span>
             </div>
         );
         let form = formElementsArray.map(formElement => (

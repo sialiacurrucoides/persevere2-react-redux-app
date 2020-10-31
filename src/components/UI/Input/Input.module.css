@@ -2,6 +2,7 @@
     width: 100%;
     padding: 0;
     box-sizing: border-box;
+    margin: auto;
 }
 
 .Label {
@@ -24,7 +25,6 @@
     width: 100%;
     box-sizing: border-box;
     margin-bottom: 1rem;
-    min-width: 20rem;
 }
 
 .InputElement:focus {
@@ -41,6 +41,5 @@
 @media only screen and (max-width: 600px){
     .InputElement {
         min-width: 8rem;
-        width: 24.3rem;
     }
 }

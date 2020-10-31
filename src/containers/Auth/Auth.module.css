@@ -1,3 +1,9 @@
+.Auth {
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
 .Title {
     color: var(--color-dark);
     text-align: center;
@@ -12,3 +18,4 @@
     align-items: center;
     color: var(--light-grey);
 }
+
