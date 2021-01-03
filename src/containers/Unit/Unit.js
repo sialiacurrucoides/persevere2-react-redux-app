@@ -34,7 +34,7 @@ class Unit extends Component {
             let newDoneDates = this.props.goal.done; newDoneDates.push(this.props.fullDate);
             const updateData = () => {
                 try {
-                    const newStreak = this.state.streak + 1;
+                    let newStreak = this.state.streak + 1;
                     const authQueryParam = '?auth=' + this.props.token;
                     const url = `goals/${this.props.goal.id}.json${authQueryParam}`;
                     let newData = {
